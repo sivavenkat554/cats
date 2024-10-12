@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('bg.png') no-repeat center center fixed; /* Transparent background image */
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(255, 204, 0, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.cart {
+    float: right;
+    margin-top: -40px;
+}
+
+.products, .accessories, .breeds {
+    padding: 20px;
+}
+
+.product, .breed {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 30%;
+    display: inline-block; /* Make products align in a row */
+    vertical-align: top;
+}
+
+.product img, .breed img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px; /* Add margin for spacing between buttons */
+}
+
+button:hover {
+    background-color: #cc7a00;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 204, 0, 0.8);
+    position: relative; /* Change from absolute to relative */
+    width: 100%;
+    bottom: 0;
+}
+
+.breeds {
+    text-align: center;
+}
+
+.breed {
+    margin: 0 10px;
+    display: inline-block; /* Make breeds align in a row */
+    width: 30%; /* Control width for breed images */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
